@@ -3,6 +3,19 @@ from dateutil.parser import parse
 import datetime
 #import turtle
 #import tkinter as TK
+import subprocess
+
+# Vérifier si openpyxl est installé
+try:
+    import openpyxl
+except ImportError:
+    print("openpyxl n'est pas installé. Installation en cours...")
+    subprocess.check_call(['pip', 'install', 'openpyxl'])
+    print("openpyxl a été installé avec succès!")
+
+# Vous pouvez ensuite importer pandas et utiliser openpyxl comme d'habitude
+import pandas as pd
+
 
 # import matplotlib.patches as patches
 #import matplotlib as mpl
