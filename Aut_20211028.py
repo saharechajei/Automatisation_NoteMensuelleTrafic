@@ -703,13 +703,13 @@ else:
         st.write('- Une progression du cabotage (', '{0:.1%}'.format(Taux_ann_Cab), '), avec un volume de',
                  round(Tr_Glob_Cab1 / 1000000, 1),
                  'MT, induite essentiellement par la hausse du trafic des conteneurs ('
-                 , MCC, '). Le trafic des hydrocarbures a, par contre, enregistré une baisse de ', abs(MCH), '.')
+                 , MCC, '). Le trafic des hydrocarbures a, par contre, enregistré une baisse de ', '{0:.1%}'.format(abs(MCH0)), '.')
 
     elif (MCC0 < 0) & (MCH0 > 0):
         st.write('- Une progression du cabotage (', '{0:.1%}'.format(Taux_ann_Cab), '), avec un volume de',
                  round(Tr_Glob_Cab1 / 1000000, 1),
                  'MT, induite essentiellement par la hausse du trafic des hydrocarbures ('
-                 , MCH, '). Le trafic des conteneurs a, par contre, enregistré une baisse de ', abs(MCC), '.')
+                 , MCH, '). Le trafic des conteneurs a, par contre, enregistré une baisse de ', '{0:.1%}'.format(abs(MCC0)), '.')
 
     # In[16]:
 
