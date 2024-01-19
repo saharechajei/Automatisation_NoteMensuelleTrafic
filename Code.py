@@ -818,7 +818,7 @@ st.write(PieChart)
 # PieChart_tri=dict(sorted(PieChart.items(), key=lambda t: t[1], reverse=True))
 explode = (0, 0.15, 0, 0)
 #fig = plt.figure(1, figsize=(7, 7))
-fig, ax = plt.subplots(figsize=( (5,5))
+fig, ax = plt.subplots(figsize=(5,5))
 # plt.pie(dict(Port_Vol).values(),labels=dict(Port_Vol).keys(), autopct='%1.1f%%', startangle=90, shadow=True)
 a = ax.pie(PieChart.values(), labels=PieChart.keys(), autopct='%1.1f%%', startangle=90, shadow=True,
             explode=(0, 0.1, 0, 0, 0.1, 0, 0.2, 0.6))
