@@ -45,7 +45,7 @@ Mois_Select=int(Mois_Select)
 #st.write(df0)
 
 #    int(input('Veuillez entrer une année: '))
-data = pd.read_excel('Trafic portruaire_Juillet2021.xlsx')
+data = pd.read_csv('Trafic portruaire_Juillet2021.csv')
 
 df = data.copy()
 #df.head()
